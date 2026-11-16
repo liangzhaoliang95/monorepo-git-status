@@ -1,11 +1,20 @@
 # Monorepo Git Status
 
-English | [简体中文](./README.md)
-
-A JetBrains IDE plugin that displays Git change statistics for directories in monorepo projects, directly in the Project View.
-
-![Plugin Version](https://img.shields.io/badge/version-1.0.8-blue)
-![JetBrains Plugin](https://img.shields.io/badge/JetBrains-Plugin-orange)
+<div align="center">
+  <img src="docs/images/logo.png" alt="Monorepo Git Status Logo" width="200"/>
+  
+  <p>A JetBrains IDE plugin that displays Git change statistics for directories in monorepo projects, directly in the Project View.</p>
+  
+  <p>
+    <img src="https://img.shields.io/badge/version-1.0.8-blue" alt="Version"/>
+    <img src="https://img.shields.io/badge/JetBrains-Plugin-orange" alt="JetBrains Plugin"/>
+    <img src="https://img.shields.io/badge/license-MIT-green" alt="License"/>
+  </p>
+  
+  <p>
+    English | <a href="./README.md">简体中文</a>
+  </p>
+</div>
 
 ## ✨ Features
 

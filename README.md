@@ -1,11 +1,20 @@
 # Monorepo Git Status
 
-[English](./README_EN.md) | 简体中文
-
-一个 JetBrains IDE 插件，用于在项目视图中直接显示 monorepo 项目中各个目录的 Git 变更统计。
-
-![插件版本](https://img.shields.io/badge/版本-1.0.8-blue)
-![JetBrains 插件](https://img.shields.io/badge/JetBrains-Plugin-orange)
+<div align="center">
+  <img src="docs/images/logo.png" alt="Monorepo Git Status Logo" width="200"/>
+  
+  <p>一个 JetBrains IDE 插件，用于在项目视图中直接显示 monorepo 项目中各个目录的 Git 变更统计。</p>
+  
+  <p>
+    <img src="https://img.shields.io/badge/版本-1.0.8-blue" alt="版本"/>
+    <img src="https://img.shields.io/badge/JetBrains-Plugin-orange" alt="JetBrains 插件"/>
+    <img src="https://img.shields.io/badge/许可证-MIT-green" alt="许可证"/>
+  </p>
+  
+  <p>
+    <a href="./README_EN.md">English</a> | 简体中文
+  </p>
+</div>
 
 ## ✨ 功能特性
 
