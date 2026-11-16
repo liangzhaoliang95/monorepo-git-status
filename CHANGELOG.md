@@ -2,6 +2,13 @@
 
 本项目的所有重要变更都将记录在此文件中。
 
+## [1.0.9] - 2026-11-16
+
+### 新增
+- 🎨 添加插件图标（40x40 和 80x80）
+- 📖 更新 README，添加 Logo 和徽章
+- 🌐 优化中英双语 README 布局
+
 ## [1.0.8] - 2026-11-16
 
 ### 新增
@@ -28,4 +35,5 @@
 - **MINOR**: 新增功能，向后兼容
 - **PATCH**: Bug 修复
 
+[1.0.9]: https://github.com/liangzhaoliang95/monorepo-git-status/releases/tag/v1.0.9
 [1.0.8]: https://github.com/liangzhaoliang95/monorepo-git-status/releases/tag/v1.0.8

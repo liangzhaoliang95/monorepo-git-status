@@ -34,6 +34,11 @@
     ]]></description>
 
     <change-notes><![CDATA[
+        <h3>1.0.9</h3>
+        <ul>
+            <li>Add plugin icon</li>
+            <li>Update README with logo and badges</li>
+        </ul>
         <h3>1.0.8</h3>
         <ul>
             <li>Initial release</li>

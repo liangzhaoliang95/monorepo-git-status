@@ -6,7 +6,7 @@
   <p>A JetBrains IDE plugin that displays Git change statistics for directories in monorepo projects, directly in the Project View.</p>
   
   <p>
-    <img src="https://img.shields.io/badge/version-1.0.8-blue" alt="Version"/>
+    <img src="https://img.shields.io/badge/version-1.0.9-blue" alt="Version"/>
     <img src="https://img.shields.io/badge/JetBrains-Plugin-orange" alt="JetBrains Plugin"/>
     <img src="https://img.shields.io/badge/license-MIT-green" alt="License"/>
   </p>

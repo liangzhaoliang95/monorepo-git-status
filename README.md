@@ -6,7 +6,7 @@
   <p>一个 JetBrains IDE 插件，用于在项目视图中直接显示 monorepo 项目中各个目录的 Git 变更统计。</p>
   
   <p>
-    <img src="https://img.shields.io/badge/版本-1.0.8-blue" alt="版本"/>
+    <img src="https://img.shields.io/badge/版本-1.0.9-blue" alt="版本"/>
     <img src="https://img.shields.io/badge/JetBrains-Plugin-orange" alt="JetBrains 插件"/>
     <img src="https://img.shields.io/badge/许可证-MIT-green" alt="许可证"/>
   </p>

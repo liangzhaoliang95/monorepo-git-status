@@ -5,7 +5,7 @@ plugins {
 }
 
 group = "com.xiaozao"
-version = "1.0.8"
+version = "1.0.9"
 
 kotlin {
     jvmToolchain(17)
@@ -24,7 +24,7 @@ repositories {
 intellijPlatform {
     pluginConfiguration {
         name = "Monorepo Git Status"
-        version = "1.0.8"
+        version = "1.0.9"
         ideaVersion {
             sinceBuild = "241"
             untilBuild = "263.*"
