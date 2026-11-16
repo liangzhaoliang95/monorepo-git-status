@@ -1,0 +1,80 @@
+<idea-plugin>
+    <id>com.xiaozao.monorepo-git-status</id>
+    <name>Monorepo Git Status</name>
+    <vendor email="liangzhaoliang95@163.com" url="https://github.com/liangzhaoliang95/monorepo-git-status">liangzhaoliang95</vendor>
+
+    <description><![CDATA[
+        <h2>Monorepo Git Status</h2>
+        <p>Display Git change statistics for directories in monorepo projects, directly in the Project View.</p>
+
+        <h3>Features</h3>
+        <ul>
+            <li>✅ Show colorful Git status next to directory names (~modified/+added/-deleted)</li>
+            <li>✅ Auto-detect common monorepo structures (packages/*, apps/*, services/*)</li>
+            <li>✅ Configurable directory monitoring</li>
+            <li>✅ Real-time updates on VCS changes</li>
+            <li>✅ Color-coded display: ~blue for modified, +red for added, -gray for deleted</li>
+        </ul>
+
+        <h3>Usage</h3>
+        <ol>
+            <li>Install the plugin and restart your IDE</li>
+            <li>Open a Git repository with a monorepo structure</li>
+            <li>The plugin will auto-detect directories under packages/, apps/, services/</li>
+            <li>Or manually configure directories in <b>Settings → Tools → Monorepo Git Status</b></li>
+            <li>Git status will appear next to configured directories in the Project View</li>
+        </ol>
+
+        <h3>Perfect for</h3>
+        <ul>
+            <li>Monorepo projects with multiple packages/services</li>
+            <li>Teams working on large codebases</li>
+            <li>Quick overview of changes across sub-projects</li>
+        </ul>
+    ]]></description>
+
+    <change-notes><![CDATA[
+        <h3>1.0.8</h3>
+        <ul>
+            <li>Initial release</li>
+            <li>Colorful Git status display in Project View</li>
+            <li>Auto-detection of monorepo structures</li>
+            <li>Configurable directory monitoring</li>
+        </ul>
+    ]]></change-notes>
+
+    <depends>com.intellij.modules.platform</depends>
+    <depends>Git4Idea</depends>
+
+    <extensions defaultExtensionNs="com.intellij">
+        <projectViewNodeDecorator
+            implementation="com.xiaozao.monorepogitstatus.MonorepoProjectViewDecorator"/>
+
+        <projectConfigurable
+            parentId="tools"
+            instance="com.xiaozao.monorepogitstatus.MonorepoSettingsConfigurable"
+            id="com.xiaozao.monorepogitstatus.MonorepoSettingsConfigurable"
+            displayName="Monorepo Git Status"/>
+
+        <projectService
+            serviceInterface="com.xiaozao.monorepogitstatus.MonorepoSettings"
+            serviceImplementation="com.xiaozao.monorepogitstatus.MonorepoSettings"/>
+
+        <projectService
+            serviceInterface="com.xiaozao.monorepogitstatus.GitStatusService"
+            serviceImplementation="com.xiaozao.monorepogitstatus.GitStatusService"/>
+
+        <projectService
+            serviceInterface="com.xiaozao.monorepogitstatus.ProjectViewRefreshService"
+            serviceImplementation="com.xiaozao.monorepogitstatus.ProjectViewRefreshService"/>
+
+        <postStartupActivity
+            implementation="com.xiaozao.monorepogitstatus.MonorepoStartupActivity"/>
+    </extensions>
+
+    <projectListeners>
+        <listener
+            class="com.xiaozao.monorepogitstatus.VcsChangeListener"
+            topic="com.intellij.openapi.vcs.changes.ChangeListListener"/>
+    </projectListeners>
+</idea-plugin>
